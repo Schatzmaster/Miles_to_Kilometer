@@ -4,8 +4,8 @@ from tkinter import *
 
 window = Tk()
 window.title("Miles to Kilometer converter")
-window.config(padx=100, pady=30)
-window.minsize(width=300, height=200)
+window.config(padx=20, pady=20)
+# window.minsize(width=300, height=200)
 
 
 # Functions
@@ -18,9 +18,6 @@ def button_clicked():
 # Widgets
 
 # Reference Label
-empty = Label(text="")
-empty.grid(column=0, row=0)
-
 miles_Label = Label(text="Miles")
 miles_Label.grid(column=2, row=1)
 
@@ -35,7 +32,7 @@ kilometers_label.grid(column=2, row=2)
 
 # Entry
 
-miles_input = Entry(width=10)
+miles_input = Entry(width=7)
 miles_input.grid(column=1, row=1)
 
 # Button
